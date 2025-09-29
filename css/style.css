@@ -1,0 +1,385 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏样式 */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* 首页横幅样式 */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* 学校介绍样式 */
+.about {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.about h2, .model-section h2, .gallery h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 3D模型样式 */
+.model-section {
+    padding: 100px 0;
+}
+
+.model-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+#model-viewer {
+    flex: 3;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.model-placeholder {
+    text-align: center;
+    width: 100%;
+}
+
+.model-canvas {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.ground {
+    width: 100%;
+    height: 50px;
+    background: #4CAF50;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.building {
+    position: absolute;
+    background: linear-gradient(to bottom, #bbdefb, #64b5f6);
+    border: 1px solid #1976D2;
+    transform-style: preserve-3d;
+}
+
+.block-1 {
+    width: 80px;
+    height: 120px;
+    left: 50px;
+    bottom: 50px;
+    background: linear-gradient(to bottom, #ffcdd2, #e57373);
+    border: 1px solid #d32f2f;
+}
+
+.block-2 {
+    width: 100px;
+    height: 180px;
+    left: 180px;
+    bottom: 50px;
+    background: linear-gradient(to bottom, #c8e6c9, #81c784);
+    border: 1px solid #388e3c;
+}
+
+.block-3 {
+    width: 70px;
+    height: 100px;
+    left: 320px;
+    bottom: 50px;
+    background: linear-gradient(to bottom, #b2ebf2, #4dd0e1);
+    border: 1px solid #0097a7;
+}
+
+.block-4 {
+    width: 120px;
+    height: 150px;
+    left: 150px;
+    bottom: 170px;
+    background: linear-gradient(to bottom, #f8bbd0, #f06292);
+    border: 1px solid #c2185b;
+}
+
+.model-controls {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.model-controls h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.model-controls button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.model-controls button:hover {
+    background-color: #0056b3;
+}
+
+/* 校园相册样式 */
+.gallery {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background-color: #fff;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 联系我们样式 */
+.contact {
+    padding: 100px 0;
+}
+
+.contact-content {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .about-content, .contact-content {
+        flex-direction: column;
+    }
+    
+    .model-container {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杭州电子科技大学校园3D模型重建</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">杭电3D校园</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">学校介绍</a></li>
+                <li><a href="#model">3D模型</a></li>
+                <li><a href="#gallery">校园相册</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>杭州电子科技大学校园3D重建</h1>
+            <p>通过先进的三维重建技术，展现杭电校园的数字孪生世界</p>
+            <a href="#model" class="cta-button">探索3D校园</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>学校介绍</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>杭州电子科技大学（Hangzhou Dianzi University），简称"杭电"，位于杭州市，是浙江省人民政府与国防科学技术工业委员会共建的教学研究型大学，是浙江省首批重点建设的5所高校之一。</p>
+                    <p>学校始创于1956年，初名杭州航空工业财经学校，1980年经国务院批准建立杭州电子工业学院，2003年原杭州出版学校整体并入，2004年更名为杭州电子科技大学。</p>
+                    <p>杭电是一所电子信息特色突出，经管学科优势明显的多科性教学研究型大学。学校设有19个学院，拥有本科专业60余个，其中国家级特色专业4个，教育部卓越工程师教育培养计划专业6个。</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/hdu-campus.jpg" alt="杭电校园">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="model" class="model-section">
+        <div class="container">
+            <h2>3D校园模型</h2>
+            <div class="model-container">
+                <div id="model-viewer">
+                    <!-- 3D模型展示区域 -->
+                    <p>3D模型加载中...</p>
+                </div>
+                <div class="model-controls">
+                    <h3>模型控制</h3>
+                    <button id="rotate-btn">旋转</button>
+                    <button id="zoom-in-btn">放大</button>
+                    <button id="zoom-out-btn">缩小</button>
+                    <button id="reset-btn">重置视角</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>校园相册</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/campus1.jpg" alt="校园风景1">
+                    <div class="gallery-caption">图书馆</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/campus2.jpg" alt="校园风景2">
+                    <div class="gallery-caption">教学楼</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/campus3.jpg" alt="校园风景3">
+                    <div class="gallery-caption">实验楼</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/campus4.jpg" alt="校园风景4">
+                    <div class="gallery-caption">学生宿舍</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>项目信息</h3>
+                    <p>本项目由杭州电子科技大学计算机学院数字媒体技术团队开发，采用先进的三维重建技术对校园进行数字化建模。</p>
+                    <p>如果您对本项目有任何建议或合作意向，请联系我们：</p>
+                    <p>邮箱：hdu3d@hdu.edu.cn</p>
+                    <p>电话：0571-8691XXXX</p>
+                </div>
+                <div class="contact-form">
+                    <h3>留言反馈</h3>
+                    <form>
+                        <input type="text" placeholder="您的姓名" required>
+                        <input type="email" placeholder="您的邮箱" required>
+                        <textarea placeholder="您的建议或意见" required></textarea>
+                        <button type="submit">提交</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 杭州电子科技大学校园3D重建项目. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
