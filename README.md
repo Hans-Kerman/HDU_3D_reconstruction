@@ -4,7 +4,7 @@
 
 ## 项目结构
 
-
+'''
 ├── index.html          # 网站主页
 ├── css/
 │   └── style.css       # 样式文件
@@ -12,6 +12,7 @@
 │   └── script.js       # JavaScript脚本
 ├── images/             # 图片资源文件夹
 └── README.md           # 项目说明文件
+'''
 
 ## 功能特点
 
