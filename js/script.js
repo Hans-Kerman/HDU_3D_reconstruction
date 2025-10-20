@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('reset-btn')?.addEventListener('click', function() {
                 alert('视角已重置！在实际应用中，这里会重置3D模型视角。');
             });
+            document.getElementById('enter-vr')?.addEventListener('click', () => {
+                location.href = 'vr.html';
+            });
         }, 1000);
     }
 
