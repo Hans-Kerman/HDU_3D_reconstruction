@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Model Viewer</title>
+    <script src="js/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- 1. 灯光：没有灯光，模型可能是黑色的 -->
+        <!-- 环境光，让模型整体都有一些亮度 -->
+        <a-light type="ambient" color="#888"></a-light>
+        <!-- 平行光，像太阳一样，可以制造阴影和高光 -->
+        <a-light type="directional" color="#FFF" position="-1 1 2"></a-light>
+
+        <!-- 
+            2. 加载模型 
+            请务必修改下面的属性！
+        -->
+        <a-gltf-model
+            src="IKUN.glb"  
+            scale="1 1 1"
+            position="0 1 -4"
+        ></a--gltf-model>
+
+        <!-- 3. 添加一个地面和天空作为参考，帮助你判断模型是否已加载 -->
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+</body>
+</html>
