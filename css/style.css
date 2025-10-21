@@ -140,6 +140,31 @@ nav {
     display: block;
 }
 
+/* 让 ID 为 'enter-vr' 的 <a> 标签看起来像一个按钮 */
+#enter-vr {
+  display: inline-block; /* 让 a 标签可以设置宽高、padding等 */
+  padding: 10px 20px;       /* 内边距 */
+  background-color: #007bff; /* 蓝色背景 */
+  color: white;             /* 白色文字 */
+  text-align: center;       /* 文字居中 */
+  text-decoration: none;    /* 移除链接默认的下划线 */
+  border-radius: 5px;       /* 增加圆角 */
+  cursor: pointer;          /* 鼠标悬停时显示手型 */
+  border: none;             /* 移除边框，更像按钮 */
+  font-size: 16px;          /* 字体大小 */
+}
+
+/* 鼠标悬停时的样式 */
+#enter-vr:hover {
+  background-color: #0056b3; /* 颜色变深 */
+}
+
+/* 鼠标点击时的样式 (可选) */
+#enter-vr:active {
+  background-color: #004085;
+}
+
+
 /* 3D模型样式 */
 .model-section {
     padding: 100px 0;
