@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>杭州电子科技大学校园3D模型重建</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- 引入Three.js库 -->
+    <script src="js/libs/three.min.js"></script>
+    <script src="js/libs/OrbitControls.js"></script>
+    <script src="js/libs/OBJLoader.js"></script>
 </head>
 <body>
     <header>
@@ -14,6 +18,7 @@
                 <li><a href="#home">首页</a></li>
                 <li><a href="#about">学校介绍</a></li>
                 <li><a href="#model">3D模型</a></li>
+                <li><a href="vr.html" target="_blank">VR体验</a></li>
                 <li><a href="#gallery">校园相册</a></li>
                 <li><a href="#contact">联系我们</a></li>
             </ul>
@@ -54,11 +59,8 @@
                 </div>
                 <div class="model-controls">
                     <h3>模型控制</h3>
-                    <button id="rotate-btn">旋转</button>
-                    <button id="zoom-in-btn">放大</button>
-                    <button id="zoom-out-btn">缩小</button>
+                    <button id="drag-btn">拖拽模式</button>
                     <button id="reset-btn">重置视角</button>
-                    <button id="enter-vr">进入VR视图</button>
                 </div>
             </div>
         </div>
@@ -118,9 +120,6 @@
         </div>
     </footer>
 
-    <script src="js/libs/three.min.js"></script>
-    <script src="js/libs/OrbitControls.js"></script>
-    <script src="js/libs/OBJLoader.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
