@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>杭州电子科技大学校园VR体验</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/libs/aframe.min.js"></script>
+    <script src="js/aframe.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -50,24 +50,21 @@
         <div class="logo">杭电3D校园</div>
         <a href="index.html">返回主页</a>
     </div>
-    
-    <div class="vr-container">
-        <a-scene>
-            <!-- 灯光设置 -->
-            <a-light type="ambient" color="#888"></a-light>
-            <a-light type="directional" color="#FFF" position="-1 1 2"></a-light>
+    <a-scene>
+        <!-- 灯光设置 -->
+        <a-light type="ambient" color="#888"></a-light>
+        <a-light type="directional" color="#FFF" position="-1 1 2"></a-light>
 
-            <!-- 3D校园模型 -->
-            <a-gltf-model
-                src="IKUN.glb"  
-                scale="1 1 1"
-                position="0 1 -4"
-            ></a-gltf-model>
+        <!-- 3D校园模型 -->
+        <a-gltf-model
+            src="IKUN.glb"  
+            scale="1 1 1"
+            position="0 1 -4"
+        ></a-gltf-model>
 
-        <!-- 3. 添加一个地面和天空作为参考，帮助你判断模型是否已加载 -->
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4">
-            <a-sky src="./42832996790_71e52a157d_b.jpg"></a-sky>
-        </a-scene>
-    </div>
+    <!-- 3. 添加一个地面和天空作为参考，帮助你判断模型是否已加载 -->
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+    <a-sky src="./42832996790_71e52a157d_b.jpg"></a-sky>
+    </a-scene>
 </body>
 </html>
